@@ -24,6 +24,7 @@
                     <a href="databases.html">Databases</a>
                     <a href="webdesign.html">Web Design</a>
                     <a href="cybersecurity.html">Cybersecurity</a>
+                    <a href="graphicarts.html">Graphic Design</a>
                 </div>
             </div>
             <a href="#news">About</a>
@@ -33,61 +34,75 @@
 
     <section class="main">
         <div id="content">
-            <div id="page_header">
+            <div class="page_header" style="padding-top: 20px;">
                 <h1 style="text-align: center;">Welcome.</h1>
                 <p style="text-align: center;">This part of the page covers Cybersecurity projects that I have done here at HLG. </p>
             </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <div id="showcase1">
-                        <div class="slideshow-container">
-                            <div class="mySlides1">
-                                <img src="./images/text.jpg" style="width:100%;">
+                        <div id="slideshow1" class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/keylog.jpg" style="width:100%;">
                             </div>
                             
-                            <div class="mySlides1">
-                                <img src="./images/placeholder.jpg" style="width:100%">
+                            <div class="mySlides">
+                                <img src="./images/keylog2.jpg" style="width:100%">
                             </div>
         
-                            <div class="mySlides1">
-                                <img src="./images/placeholder.jpg" style="width:100%">
+                            <div class="mySlides">
+                                <img src="./images/keylog3.jpg" style="width:100%">
                             </div>
         
-                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+                            </div>
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Ransomware</h3>
+                    <p>In our Ethical Hacking class we had to create python scripts that can be used for various reasons. Following a video tutorial we created these python scripts.</p>
+                    <p> Slide 1: Showing the python script for a keylogger</p>
+                    <p> Slide 2: Running the script and pressing keys for it to log</p>
+                    <p> Slide 3: The log file showing the output of the keylogger</p>
+                </div>
+
+                <div class="grid-item">
+                    <div class="showcase1">
+                        <div id="slideshow2" class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/reverse1.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <img src="./images/reverse2.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides">
+                                <img src="./images/reverse3.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, slideshow2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid-item">
-                    <h3>Hello World</h3>
-                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
-                </div>
-
-                <div class="grid-item">
-                    <div class="showcase1">
-                        <div class="slideshow-container">
-                            <div class="mySlides2">
-                                <img src="./images/text.jpg" style="width:100%">
-                            </div>
-                            
-                            <div class="mySlides2">
-                                <img src="./images/placeholder.jpg" style="width:100%">
-                            </div>
-        
-                            <div class="mySlides2">
-                                <img src="./images/placeholder.jpg" style="width:100%">
-                            </div>
-        
-                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <h3>Hello World</h3>
-                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
+                    <h3>Random Access Trojan (RAT)</h3>
+                    <p>In our Ethical Hacking class we had to create python scripts that can be used for various reasons. Following a video tutorial we created these python scripts.</p>
+                    <p>Slide 1: Showing the reverse shell script</p>
+                    <p>Slide 2: Showing the server script</p>
+                    <p>Slide 3: Connecting the program to the local server than running some Linux commands</p>
                 </div>
 
                 <div class="grid-item">
@@ -105,8 +120,8 @@
                                 <img src="./images/placeholder.jpg" style="width:100%">
                             </div>
         
-                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
                         </div>
                     </div>
                 </div>
@@ -118,26 +133,40 @@
             </div> 
         </div>
     </section>
+<!-- Source: W3 Schools-->
 <script>
-    let slideIndex = [1,1];
-    let slideId = ["mySlides1", "mySlides2", "mySlides3"]
-    showSlides(1, 0);
-    showSlides(1, 1);
-        
-    function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-    }
-        
-    function showSlides(n, no) {
-        let i;
-        let x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) {slideIndex[no] = 1}    
-        if (n < 1) {slideIndex[no] = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        x[slideIndex[no]-1].style.display = "block";  
-    }
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
 </script>   
         
 </body>

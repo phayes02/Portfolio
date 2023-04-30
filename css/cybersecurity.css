@@ -98,6 +98,9 @@ h1 {
     background-size: cover;
 }
 
+
+
+
 #content {
     margin-left: 150px;
     margin-right: 150px ;
@@ -108,11 +111,12 @@ h1 {
     background-color: #141414;
 }
 
+/* Slide show code */
+
 * {box-sizing: border-box;}
 
-.mySlides1, .mySlides2, .mySlides3 {
-    display: flex;
-    align-items: center;
+.mySlides {
+    display: none
 }
 
 
@@ -152,7 +156,20 @@ img {
     color: black;
 }
 
-
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
 
 .grid-container {
     display: grid;
