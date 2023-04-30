@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/cybersecurity.css">
+</head>
+<body>
+    <div class="title">
+        <h1>My Portfolio - Progamming Projects</h1>
+    </div>
+	<header>
+		<div class="navbar">
+            <a href="index.html">Home</a>    
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="hardware.html">Hardware</a>
+                    <a href="programming.html">Programming</a>
+                    <a href="networking.html">Networking</a>
+                    <a href="databases.html">Databases</a>
+                    <a href="webdesign.html">Web Design</a>
+                    <a href="cybersecurity.html">Cybersecurity</a>
+                </div>
+            </div>
+            <a href="#news">About</a>
+            <a href="#news">Contact</a>
+        </div>
+	</header>
+
+    <section class="main">
+        <div id="content">
+            <div id="page_header">
+                <h1 style="text-align: center;">Welcome.</h1>
+                <p style="text-align: center;">This part of the page covers Cybersecurity projects that I have done here at HLG. </p>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div id="showcase1">
+                        <div class="slideshow-container">
+                            <div class="mySlides1">
+                                <img src="./images/text.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="mySlides1">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides1">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Hello World</h3>
+                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
+                </div>
+
+                <div class="grid-item">
+                    <div class="showcase1">
+                        <div class="slideshow-container">
+                            <div class="mySlides2">
+                                <img src="./images/text.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides2">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides2">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Hello World</h3>
+                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
+                </div>
+
+                <div class="grid-item">
+                    <div class="showcase1">
+                        <div class="slideshow-container">
+                            <div class="mySlides3">
+                                <img src="./images/text.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides3">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides3">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Hello World</h3>
+                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+<script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+        
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+        
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+    }
+</script>   
+        
+</body>
+</html>
