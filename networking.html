@@ -4,7 +4,7 @@
 	<title>My Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/networking.css">
+	<link rel="stylesheet" href="./css/hardware.css">
 </head>
 <body>
     <div class="title">
@@ -27,20 +27,161 @@
                     <a href="graphicarts.html">Graphic Design</a>
                 </div>
             </div>
-            <a href="#news">About</a>
             <a href="#news">Contact</a>
         </div>
 	</header>
 
     <section class="main">
         <div id="content">
-            <div id="page_header">
-                <h1>Welcome.</h1>
-                <p>This part of the page covers programming projects that I have done here at HLG. Unfortunately, the programs that I was going to use here that we did in a programming fundamentals class are on Cengage and I cannot access them. </p>
+            <div class="page_header" style="padding-top: 20px;">
+                <h1 style="text-align: center;">Welcome.</h1>
+                <p style="text-align: center;">This part of the page covers Networking projects that I have done here at HLG. </p>
             </div>
-            <div id="showcase">
-                <h1>Lab Computer</h1>
-                <p>This is my computer that I built for our Foundation of Computer Systems class. For me personally, it was the first computer that I built sucessfully. We were given a $550 budget to build it so I had to go cheap on some parts. </p>
-            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div id="showcase1">
+                        <div id="slideshow1" class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/keylog.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <img src="./images/labimprovements1.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides">
+                                <img src="./images/keylog3.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+                            </div>
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Lab Improvements</h3>
+                    <p>In our Networking course, we all had to make improvements to our lab. I was tasked to fix the Ethernet ports that broken. One of the previous students left behind a topology that displayed which ports were working and those that weren't. Even though I had that topology I still went around with a laptop and plugged into every single port. Although there were certain ones I did not mess with as other CS students already used them and I did not want to interfere with their connections. After figuring out the bad ports I took them out of their place and replaced their headers to see if that was the fix. For a majority, in which I only had three bad ports, that worked for them but there was one port that still would not work. After spending a lot of time trying to figure out what it could be, while looking at the CS Lab Documentation I noticed that the cable was plugged into the wrong port on the switch. Switching the port the cable worked perfectly fine.</p>
+                    <p> Slide 1: The typology showing the ports</p>
+                    <p> Slide 2: The T-568A Straight-Through Ethernet Cable Standard</p>
+                    <p> Slide 3: Tools used to redo the cables</p>
+                </div>
+
+                <div class="grid-item">
+                    <div class="showcase1">
+                        <div id="slideshow2" class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/reverse1.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <img src="./images/reverse2.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides">
+                                <img src="./images/reverse3.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, slideshow2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+                                <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+                                <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Minerial Oil Computer</h3>
+                    <p>In our Ethical Hacking class we had to create python scripts that can be used for various reasons. Following a video tutorial we created these python scripts.</p>
+                    <p>Slide 1: Showing the reverse shell script</p>
+                    <p>Slide 2: Showing the server script</p>
+                    <p>Slide 3: Connecting the program to the local server than running some Linux commands</p>
+                </div>
+
+                <div class="grid-item">
+                    <div class="showcase1">
+                        <div id="slideshow3" class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/text.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <div class="mySlides">
+                                <img src="./images/placeholder.jpg" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, slideshow3)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+                                <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+                                <span class="dot" onclick="currentSlide(3, slideshow3)"></span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Hello World</h3>
+                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
+                </div>
+            </div> 
         </div>
     </section>
+<!-- Source: W3 Schools-->
+<script>
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.getElementById("slideshow3");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>   
+        
+</body>
+</html>

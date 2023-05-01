@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="title">
-        <h1>My Portfolio - Progamming Projects</h1>
+        <h1>My Portfolio - Database Projects</h1>
     </div>
 	<header>
 		<div class="navbar">
@@ -27,7 +27,6 @@
                     <a href="graphicarts.html">Graphic Design</a>
                 </div>
             </div>
-            <a href="#news">About</a>
             <a href="#news">Contact</a>
         </div>
 	</header>
@@ -35,12 +34,100 @@
     <section class="main">
         <div id="content">
             <div id="page_header">
-                <h1>Welcome.</h1>
-                <p>This part of the page covers programming projects that I have done here at HLG. Unfortunately, the programs that I was going to use here that we did in a programming fundamentals class are on Cengage and I cannot access them. </p>
+                <h1 style="text-align: center;">Welcome.</h1>
+                <p style="text-align: center;">This part of the page covers programming projects that I have done here at HLG. In this course we used MySQL to create databases, and at the end we implemented PHP into our database to create a CRUD website. </p>
             </div>
-            <div id="showcase">
-                <h1>Lab Computer</h1>
-                <p>This is my computer that I built for our Foundation of Computer Systems class. For me personally, it was the first computer that I built sucessfully. We were given a $550 budget to build it so I had to go cheap on some parts. </p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div id="showcase1">
+                        <div id="slideshow1" class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/grouperd.png" style="width: 75%;">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <img src="./images/scenario.PNG" style="width:100%">
+                            </div>
+        
+                            <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+                            </div>
+
+                        </div>
+                        <br>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-item">
+                    <h3>Group ERD</h3>
+                    <b>Credit: Bryce Stark, Tomotaka Hagiwara, Isaiah Hoelscher, Peyton Hayes</b>
+                    <p>This is an Entity Relationship Diagram (ERD) that we had to create for a scenario. The scenario goes as follow: Harris’ Pet Store has requested you to design a database to store information on sales on animals and
+                        merchandises. The sales form of their business is shown in Figure C1 below.  Using the form shown below, your team should be able to gather the data needed to build an ERD for a database design.  Be sure to include primary keys,</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./images/sqlquries.png" style="width: 75%;">
+                </div>
+
+                <div class="grid-item">
+                    <h3>SQL Queries</h3>
+                    <p>1st Query: In this query the use of a JOIN function is used. In this instance, the names of the shows and their producers (reality_show.showName, producer.compName) will be displayed. Using the table of <i>producer</i> we are pulling data where the ID of the producer is the same in the <i>reality_show</i> table.</p>
+                    <p>2nd Query: This query is here to find reality shows that have a higher rating than 8. Selecting the name of the show (showName) from our <i>reality_show</i> table, we use the condition of where the ratingID in the <i>rating</i> table where the rating is higher than 8.</p>
+                    <p>3rd Query: The last query is a conditional statement. Here we select the ID of the show (tvID) from the <i>television</i> table, where the location of the head office (head_office) is in Pittsburg. </p>
+                </div>
+
+                <div class="grid-item">
+                    <video width="640" height="360" controls>
+                        <source src="./images/PHP.mp4" type=video/mp4>
+                    </video>
+                </div>
+
+                <div class="grid-item">
+                    <h3>PHP CRUD</h3>
+                    <p>Here is a website that we had to create with CRUD functions. CRUD is Create, Read, Update, and Delete. Using WAMP I had created a website that was connected to a database for names of Spongebob characters. It seems that I was not able to get the Update part to work. Running these php files on GitHub will not work, so I downloaded the video that I submitted for the assignment for you to watch.</p>
+                </div>
             </div>
         </div>
     </section>
+    <script>
+        var slideshow1 = document.getElementById("slideshow1");
+        slideshow1.currentSlideIndex = 1;
+        showSlides(slideshow1.currentSlideIndex, slideshow1);
+        
+        var slideshow2 = document.getElementById("slideshow2");
+        slideshow2.currentSlideIndex = 1;
+        showSlides(slideshow2.currentSlideIndex, slideshow2);
+        
+        
+        function plusSlides(n, slideshow) {
+          showSlides(slideshow.currentSlideIndex += n, slideshow);
+        }
+        
+        function currentSlide(n, slideshow) {
+          showSlides(slideshow.currentSlideIndex = n, slideshow);
+        }
+        
+        function showSlides(n, slideshow) {
+          var i;
+          var slides = slideshow.getElementsByClassName("mySlides");
+          var dots = slideshow.getElementsByClassName("dot");
+          if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+          if (n < 1) {slideshow.currentSlideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideshow.currentSlideIndex-1].style.display = "block";  
+          dots[slideshow.currentSlideIndex-1].className += " active";
+        }
+    </script>   
+                
+    </body>
+    </html>
