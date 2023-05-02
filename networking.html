@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Portfolio</title>
+	<title>Peyton Hayes - Networking</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/hardware.css">
+	<link rel="stylesheet" href="./css/projects.css">
 </head>
 <body>
     <div class="title">
-        <h1>My Portfolio - Networking Projects</h1>
+        <h1>Peyton Hayes - Networking Projects</h1>
     </div>
 	<header>
 		<div class="navbar">
@@ -22,35 +22,35 @@
                     <a href="programming.html">Programming</a>
                     <a href="networking.html">Networking</a>
                     <a href="databases.html">Databases</a>
-                    <a href="webdesign.html">Web Design</a>
+                    <a href="https://phayes02.github.io/Final/">Web Design</a>
                     <a href="cybersecurity.html">Cybersecurity</a>
                     <a href="graphicarts.html">Graphic Design</a>
                 </div>
             </div>
-            <a href="#news">Contact</a>
+            <a href="resume.html">Resume</a>
         </div>
 	</header>
 
     <section class="main">
-        <div id="content">
-            <div class="page_header" style="padding-top: 20px;">
-                <h1 style="text-align: center;">Welcome.</h1>
-                <p style="text-align: center;">This part of the page covers Networking projects that I have done here at HLG. </p>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">
+        <div class="content">
+            <div class="flex-container">
+                <div class="flex-item-left">
                     <div id="showcase1">
                         <div id="slideshow1" class="slideshow-container">
                             <div class="mySlides">
-                                <img src="./images/keylog.jpg" style="width:100%;">
+                                <img src="./images/Scanned Documents_page-0001.jpg" style="width:100%;">
                             </div>
                             
                             <div class="mySlides">
-                                <img src="./images/labimprovements1.jpg" style="width:100%">
+                                <img src="./images/Scanned Documents_page-0002.jpg" style="width:100%">
                             </div>
         
                             <div class="mySlides">
-                                <img src="./images/keylog3.jpg" style="width:100%">
+                                <img src="./images/labimprovements1.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="./images/tools.jpeg" style="width:100%">
                             </div>
         
                             <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
@@ -59,23 +59,26 @@
                             <div style="text-align:center">
                                 <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
                                 <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
-                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
                             </div>
-
                         </div>
-                        <br>
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="flex-item-right">
                     <h3>Lab Improvements</h3>
                     <p>In our Networking course, we all had to make improvements to our lab. I was tasked to fix the Ethernet ports that broken. One of the previous students left behind a topology that displayed which ports were working and those that weren't. Even though I had that topology I still went around with a laptop and plugged into every single port. Although there were certain ones I did not mess with as other CS students already used them and I did not want to interfere with their connections. After figuring out the bad ports I took them out of their place and replaced their headers to see if that was the fix. For a majority, in which I only had three bad ports, that worked for them but there was one port that still would not work. After spending a lot of time trying to figure out what it could be, while looking at the CS Lab Documentation I noticed that the cable was plugged into the wrong port on the switch. Switching the port the cable worked perfectly fine.</p>
                     <p> Slide 1: The typology showing the ports</p>
                     <p> Slide 2: The T-568A Straight-Through Ethernet Cable Standard</p>
                     <p> Slide 3: Tools used to redo the cables</p>
                 </div>
-
-                <div class="grid-item">
+            </div>
+        </div> 
+        
+        <div class="content">
+            <div class="flex-container">        
+                <div class="flex-item-left">
                     <div class="showcase1">
                         <div id="slideshow2" class="slideshow-container">
                             <div class="mySlides">
@@ -102,15 +105,19 @@
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="flex-item-right">
                     <h3>Minerial Oil Computer</h3>
                     <p>In our Ethical Hacking class we had to create python scripts that can be used for various reasons. Following a video tutorial we created these python scripts.</p>
                     <p>Slide 1: Showing the reverse shell script</p>
                     <p>Slide 2: Showing the server script</p>
                     <p>Slide 3: Connecting the program to the local server than running some Linux commands</p>
                 </div>
+            </div>
+        </div>
 
-                <div class="grid-item">
+        <div class="content">
+            <div class="flex-container">
+                <div class="flex-item-left">
                     <div class="showcase1">
                         <div id="slideshow3" class="slideshow-container">
                             <div class="mySlides">
@@ -137,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="flex-item-right">
                     <h3>Hello World</h3>
                     <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
                 </div>

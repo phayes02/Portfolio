@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, sans-serif;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	background-color: #f7f7f7;
 	color: #333;
 	margin: 0;
@@ -18,6 +18,10 @@ header {
 
 h1 {
 	margin: 0;
+}
+
+h2, p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .title {
@@ -98,16 +102,68 @@ h1 {
     background-size: cover;
 }
 
-
-
-
 #content {
     margin-left: 150px;
     margin-right: 150px ;
     padding-bottom: 35px;
+    padding-top: 20px;
     background-color: white;
 }
 
 #content-page {
     background-color: #141414;
+}
+
+#name_header{
+    text-align: center;
+    background-color: #333;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #fff;
+}
+
+#name_header h2 {
+    font-size: 75px;
+}
+
+#name_header p {
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.flex-item-left {
+    flex: 50%;
+    padding: 20px;
+    color: black;
+    text-align: right;
+}
+
+.flex-item-right{
+    flex: 50%;
+    padding: 20px;
+    color: #141414;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.foot {
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .flex-item-left, .flex-item-right {
+        flex: 100%;
+    }
 }

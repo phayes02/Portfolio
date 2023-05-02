@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Portfolio</title>
+	<title>Peyton Hayes - Cybersecurity</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/cybersecurity.css">
+	<link rel="stylesheet" href="./css/projects.css">
 </head>
 <body>
     <div class="title">
-        <h1>My Portfolio - Cybersecurity Projects</h1>
+        <h1>Peyton Hayes - Cybersecurity Projects</h1>
     </div>
 	<header>
 		<div class="navbar">
@@ -22,23 +22,19 @@
                     <a href="programming.html">Programming</a>
                     <a href="networking.html">Networking</a>
                     <a href="databases.html">Databases</a>
-                    <a href="webdesign.html">Web Design</a>
+                    <a href="https://phayes02.github.io/Final/">Web Design</a>
                     <a href="cybersecurity.html">Cybersecurity</a>
                     <a href="graphicarts.html">Graphic Design</a>
                 </div>
             </div>
-            <a href="#news">Contact</a>
+            <a href="resume.html">Resume</a>
         </div>
 	</header>
 
     <section class="main">
-        <div id="content">
-            <div class="page_header" style="padding-top: 20px;">
-                <h1 style="text-align: center;">Welcome.</h1>
-                <p style="text-align: center;">This part of the page covers Cybersecurity projects that I have done here at HLG. </p>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">
+        <div class="content">
+            <div class="flex-container">
+                <div class="flex-item-left">
                     <div id="showcase1">
                         <div id="slideshow1" class="slideshow-container">
                             <div class="mySlides">
@@ -67,15 +63,19 @@
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="flex-item-right">
                     <h3>Ransomware</h3>
                     <p>In our Cybersecurity class we were given two labs to recreate to present to the class. This lab is about ransomware, more specifically the WannaCry ransomware. In 2017, WannaCry begin to infect Windows systems in demand for payment of bitcoins. Like other ransomware, once the executable is ran your files will be encrypted and locked. The only way to get your files back is through payment. In this lab we install a repository called theZoo that contains the WannaCry files. Using Kali Linux, we will attack a Windows 7 virtual machine.</p>
                     <p> Slide 1: Showing theZoo repository after cloning the github repository</p>
                     <p> Slide 2: On the Windows 7 machine (Dummy) we go to the address of our Apache server. Then download the ransomware executable.</p>
                     <p> Slide 3: After running the executable our Dummy machine is now infected. The screenshot shows the screen of what you would see if you were infected by WannaCry. </p>
                 </div>
+            </div>
+        </div>
 
-                <div class="grid-item">
+        <div class="content">
+            <div class="flex-container">
+                <div class="flex-item-left">
                     <div class="showcase1">
                         <div id="slideshow2" class="slideshow-container">
                             <div class="mySlides">
@@ -103,15 +103,19 @@
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="flex-item-right">
                     <h3>Remote Access Trojan (RAT)</h3>
                     <p>In Cybersecurity, the second lab that I was given is about Remote Access Trojans (RAT). Basically, RATs are a way for malicious users to remotely control your computer. A backdoor would need to be installed in the first place for this to work. For this lab, we will be using the Metasploit Framework, which contains a bunch of exploits for Windows, Linux, and Mac. Using Metasploit, we will run a persistence module. Note: In this example Metasploit 5 is being used, as of now Metasploit has been updated to its 6th version and the persistence module takes more to function. Again we will be using our Kali Linux machine to attack our Dummy machine.</p>
                     <p>Slide 1: After running the reverse tcp script, our system is listening and waiting for a victim to run the executable.</p>
                     <p>Slide 2: Its not shown, but the Dummy machine has now ran the executable. Now that we are connect to the Dummy machine we run the persistence modules and create the RAT. Now that the RAT is created, the machine is practically ours. </p>
                     <p>Slide 3: Since the RAT is in place, we can access the session at any given moment. After setting the configuration again, we now are back into the meterpreter waiting for the next commands.</p>
                 </div>
-
-                <div class="grid-item">
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="flex-container">
+                <div class="flex-item-left">
                     <div class="showcase1">
                         <div id="slideshow3" class="slideshow-container">
                             <div class="mySlides">
@@ -134,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="flex-item-right">
                     <h3>TryHackMe</h3>
                     <p>TryHackMe is a website to teach you about cybersecurity through their labs. In our Ethical Hacking class, we were tasked to complete all the learning paths labs that were free, complete at least one full path, and one of the network modules. It took a long time, but I was able to complete the task. If you are really interested learning about cybersecurity and other hacking tools, I'd strongly suggest looking into TryHackMe. It has a free plan, but you are limited on some things and all modules are not available.</p>
                     <p>Slide 1: This shows the learning paths that I have fully completed and the ones that I was able to complete for free.</p>
