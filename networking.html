@@ -82,17 +82,25 @@
                     <div class="showcase1">
                         <div id="slideshow2" class="slideshow-container">
                             <div class="mySlides">
-                                <img src="./images/reverse1.jpg" style="width:100%">
+                                <img src="./images/pfsense.jpg" style="width:100%">
                             </div>
                             
                             <div class="mySlides">
-                                <img src="./images/reverse2.jpg" style="width:100%">
+                                <img src="./images/server1.jpg" style="width:100%">
                             </div>
         
                             <div class="mySlides">
-                                <img src="./images/reverse3.jpg" style="width:100%">
+                                <img src="./images/serverping.jpg" style="width:100%">
                             </div>
         
+                            <div class="mySlides">
+                                <img src="./images/userping.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="./images/userserverping.jpg" style="width:100%">
+                            </div>
+
                             <a class="prev" onclick="plusSlides(-1, slideshow2)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
 
@@ -100,55 +108,23 @@
                                 <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
                                 <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
                                 <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+                                <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+                                <span class="dot" onclick="currentSlide(5, slideshow2)"></span> 
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex-item-right">
-                    <h3>Minerial Oil Computer</h3>
-                    <p>In our Ethical Hacking class we had to create python scripts that can be used for various reasons. Following a video tutorial we created these python scripts.</p>
-                    <p>Slide 1: Showing the reverse shell script</p>
-                    <p>Slide 2: Showing the server script</p>
-                    <p>Slide 3: Connecting the program to the local server than running some Linux commands</p>
+                    <h3>Virtulized Network</h3>
+                    <p>In Networking we had to create a virtualized network on Hyper-V. Originally it started out with a Windows Server virtual machine and a Windows 10 machine but later on a pfSense machine would be added. Both machines were using an internal switch and was given static IPs. The Windows Server had Active Directory on it and we created a domain for our user (Windows 10 machine). There we add policies and created groups to give an idea of how Active Directory works and how to configure it. pfSense was added later on to provide connection to both machines with it have an internal and external switch connection.  </p>
+                    <p>Slide 1: The pfSense configuration</p>
+                    <p>Slide 2: Windows Server machine IP</p>
+                    <p>Slide 3: Windows Server pinging the pfSense router.</p>
+                    <p>Slide 4: Windows 10 machine IP and pinging the router</p>
+                    <p>Slide 5: Windows Server and Windows 10 machine pinging one another.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="content">
-            <div class="flex-container">
-                <div class="flex-item-left">
-                    <div class="showcase1">
-                        <div id="slideshow3" class="slideshow-container">
-                            <div class="mySlides">
-                                <img src="./images/text.jpg" style="width:100%">
-                            </div>
-                            
-                            <div class="mySlides">
-                                <img src="./images/placeholder.jpg" style="width:100%">
-                            </div>
-        
-                            <div class="mySlides">
-                                <img src="./images/placeholder.jpg" style="width:100%">
-                            </div>
-        
-                            <a class="prev" onclick="plusSlides(-1, slideshow3)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
-
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
-                                <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
-                                <span class="dot" onclick="currentSlide(3, slideshow3)"></span> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-item-right">
-                    <h3>Hello World</h3>
-                    <p>JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ</p>
-                </div>
-            </div> 
         </div>
     </section>
 <!-- Source: W3 Schools-->
